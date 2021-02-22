@@ -7,38 +7,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">  
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&display=swap" rel="stylesheet">
+
+</head>
   <body>
-    <header class="head">   <!--encabezado-->
-          <H1>SECRETOS DE AMIGAS</H1>
+    <header>   <!--encabezado-->
+          <img src="imagen/logo1.png" width="70" height="70">
+          <H1>Secretos de amigas</H1>
+          <img src="imagen/logo2.png" width="70" height="70">
     </header> 
     <section> <!--esta  seccion lleva la interacion de  inicio-->
-      <div>
+        
+      <div  class="container"> 
         <h1>BIENVENIDAS</h1>
-        <p>TEXTO.................................</p>
-        <input type="text" placeholder=" ingresar offset" id="offset" class="input">
+        <p>Con secretos de amigas puedes  enviarte mensajes encriptados con quien desees, para que tus secretos viajen de forma segura</p> <br>
+        <h4><span style= "color: #734199"> INSTRUCCIONES</span></h4>
+        <ol><span style="text-align: start">
+          <li>Ingresa tu numero de telefono</li>
+          <li>Ingresa el numero del telefono de tu amiga</li>
+          <li>Ingresa la clave,  la clave corresponde a la cantidad de digitos te permitira cifrar o  descifrar, <b> <i>RECUERDA! </b> </i> descifrar el  mensaje debes saber con que clave se encripto</li>
+          <li>Ingresa el mensaje</li>
+          <li>Selecciona la opcion que deseas</li> </span>
+        </ol>
+      </div> <br>
+      
+      <div id="container_telefonos" >
+        <img src="imagen/tel1.png"  width="50px" height="50px">
         <input type="text" placeholder=" tel origen" id="origen" class="input">
+        <img src="imagen/tel2.png"  width="50px" height="50px">
         <input type="text" placeholder=" tel destino" id="destino" class="input">
-        <textarea name="mensaje" rows="10" cols="40" class="input" placeholder="Escribe  tu  mensaje"></textarea>
-        <button type="button" onclic="CIFRAR" id= "button_code" class="button">CIFRAR</button>
-        <button type="button" onclic="DESFIFRAR" id= "button_encode" class="button">DESCIFRAR</button>
-        <button type="button" onclic="HISTORIAL" id= "button_historial" class="button">HISTORIAL</button>
+      </div>
+
+      <div class="container">
+        <input type="text" placeholder=" ingresar clave" id="offset" class="input">
+      </div>
+
+      <div class="container">
+        <textarea name="mensaje" rows="10" cols="40"  placeholder="Escribe  tu  mensaje" id="mensaje"></textarea>
+      </div>
+     
+      <div class="container">
+        <button type="button" id= "button_code" class="button">CIFRAR</button>
+        <button type="button" id= "button_encode" class="button">DESCIFRAR</button>
+      </div>
+      <div id="container_historial">
+        <button name="boton "type="submit" id= "button_historial" ><img src="imagen/historial.png" width="70px"height="70px"></button>
       </div>
     </section>
 
     <section> <!--esta  seccion lleva la interaccion que muestra el  mensaje cifrado  o  desfrado -->
-      <div>
-        <h2>tu mensaje ...... es </h2>
-        <P>MENSAJE.................</P>
-        <button type="button" onclic="location.reload()"; id= "inicio" class="button">INICIO</button>
-        <button type="button" onclic="enviar" id= "enviar" class="button">ENVIAR</button>
+      <div class="container">
+        <h2>tu mensaje ...... es </h2><br>
+        <P id="mensajefinal"></P>
+      </div>
+
+      <div class="containerButton">
+        <button type="button" onclick="location.reload()"; id= "inicio" class="button">INICIO</button>
+        <button type="button"  id= "enviar" class="button">ENVIAR <img src="imagen/logog.png" width="20px"height="20px"></button>
       </div>
     </section>
-   <!-- <div id="root">
-      <h1>Hello world!</h1>
-      <p>hola  chicas</p>
-    </div> -->
-    <script src="index.js" type="module"></script>
+
+        <script src="index.js" type="module"></script>
   </body>
 </html>
