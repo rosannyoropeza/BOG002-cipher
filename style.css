@@ -74,7 +74,7 @@
       margin: 10px auto;  
       display: block;
       text-align: center;  
-  }
+      }
   
   section{
       width: 60%; /*ancho*/
@@ -118,3 +118,9 @@
      margin: auto;
      background: cornsilk;
   }
+
+  h4, p, ol
+{
+    margin-bottom: 50;
+    padding: 2%;
+}
