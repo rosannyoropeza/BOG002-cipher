@@ -32,8 +32,8 @@
       border-radius: 5px;
       border: 1px solid black;
       margin: 10px 0;
-      width: 17%;
-  }
+      width: 20%;
+   }
   
   .button
   {
@@ -106,6 +106,7 @@
       border-radius: 5px;
       border: 1px solid black;
       margin: 10px 0;
+      /*text-transform: uppercase;*/
   }
   
   #mensajefinal
