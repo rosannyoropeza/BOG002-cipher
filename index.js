@@ -5,7 +5,7 @@ let offset = document.getElementById("offset");
 let botonDecode = document.getElementById("button_decode");
 let botonEncode = document.getElementById("button_encode");
 let mensajeGuardado = " ";
-let offsetGuardado = 0;
+let offsetGuardado;
 
 mensaje.addEventListener("keyup", function () {
   mensaje.value = mensaje.value.toUpperCase();
@@ -14,16 +14,17 @@ mensaje.addEventListener("keyup", function () {
 });
 
 botonEncode.addEventListener("click", function () {
-  offsetGuardado= offset.value;
+  offsetGuardado = parseInt(offset.value);
   cipher.encode(offsetGuardado, mensajeGuardado);
+  //console.log(typeof offsetGuardado, mensajeGuardado); // validar el  tipo  de dato que offset
 
 });
 
 botonDecode.addEventListener("click", function () {
-  offsetGuardado= offset.value;
-  cipher.encode(offsetGuardado, mensajeGuardado);
+  offsetGuardado = parseInt(offset.value);
+  cipher.decode(offsetGuardado, mensajeGuardado);
 });
 
 
-console.log(cipher.decode);
+//console.log(cipher.decode);
 
