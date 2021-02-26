@@ -1,126 +1,115 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body{
-     /* background: linear-gradient(to top,  #6f5770,#f18281, #fad282) fixed;*/
-     background-image: url(imagen/SECRETODEAMIGAS1.gif); 
-     background-size: 100% 100%;
-     background-attachment: fixed;
-     font-family: 'Noto Sans KR', sans-serif;
-      
-  }
-  
-  header
-  {
-  font-family: 'Satisfy', cursive;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background: linear-gradient(to top,  #6f5770,#f18281, #fad282) fixed;*/
+  background-image: url(imagen/SECRETODEAMIGAS1.gif);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+header {
+  font-family: "Satisfy", cursive;
   font-size: 20px;
   width: 60%; /*andcho de la pantalla*/
   height: 75px;
   margin: 10px auto; /*centra el elemento*/
   background: linear-gradient(to left, #fe98d7, #87cdd1);
-  display: flex; /*caja flexible*/ 
+  display: flex; /*caja flexible*/
   justify-content: center; /*los elementos flexibles se disponen a lo largo del eje principal en la línea en curso.*/
   line-height: 75px; /*centrar verticamente*/
-  }
-  
-  .input
-  {
-      font-family: 'Noto Sans KR', sans-serif;
-      border-radius: 5px;
-      border: 1px solid black;
-      margin: 10px 0;
-      width: 20%;
-   }
-  
-  .button
-  {
-      font-family: 'Akaya Kanadaka', cursive;
-      border-radius: 10px;
-      padding: 5px;
-      border: 3px solid rgb(218, 100, 188);
-      border-style: outset;
-      display:inline-block;
-      background: linear-gradient(to left, #fe98d7, #87cdd1);
-      color: rgb(15, 15, 15);
-  }
-    
-  .button:hover /*cambiar el  color  al pasarle el  cursor*/
-  {
-      background-color: rgb(25, 6, 109);
-      cursor: pointer;
-  }
-  
-  #container_historial
-  {
-      padding: 5px;
-      display:inline-block;
-      display: flex;
-      justify-content:flex-end;
-      box-shadow: none
-  }
-  
-  #button_historial
-  {
-      background-color:none;
-      border: 2px solid #fff;
-      box-shadow: none
-  }
-  
-  .container{
-      width: 70%; /*ancho*/
-      margin: 10px auto;  
-      display: block;
-      text-align: center;  
-      }
-  
-  section{
-      width: 60%; /*ancho*/
-      margin: 10px auto; 
-  }
-  
-  .containerButton{
-      width: 70%; /*ancho*/
-      margin: 20px auto;  
-      display: flex;
-      justify-content: space-around; 
-  }
-  
-  #container_offset
-  {
-      display: flex;
-      justify-items: center;
-  }
-  
-  #container_telefonos
-  {
-      display: flex;
-      justify-content: center;
-  }
-  
-  #mensaje
-  {
-      font-family: 'Noto Sans KR', sans-serif;
-      border-radius: 5px;
-      border: 1px solid black;
-      margin: 10px 0;
-      /*text-transform: uppercase;*/
-  }
-  
-  #mensajefinal
-  {
-      border: 1px solid black;
-      border-radius: 5px;
-      width: 300px;
-      height: 150px;
-     margin: auto;
-     background: cornsilk;
-  }
+}
 
-  h4, p, ol
-{
-    margin-bottom: 50;
-    padding: 2%;
+.input {
+  font-family: "Noto Sans KR", sans-serif;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px 0;
+  width: 20%;
+}
+
+.button {
+  font-family: "Akaya Kanadaka", cursive;
+  border-radius: 10px;
+  padding: 5px;
+  border: 3px solid rgb(218, 100, 188);
+  border-style: outset;
+  display: inline-block;
+  background: linear-gradient(to left, #fe98d7, #87cdd1);
+  color: rgb(15, 15, 15);
+}
+
+.button:hover /*cambiar el  color  al pasarle el  cursor*/ {
+  background-color: rgb(25, 6, 109);
+  cursor: pointer;
+}
+
+#container_historial {
+  padding: 5px;
+  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: none;
+}
+
+#button_historial {
+  background-color: none;
+  border: 2px solid #fff;
+  box-shadow: none;
+}
+
+.container {
+  width: 70%; /*ancho*/
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+section {
+  width: 60%; /*ancho*/
+  margin: 10px auto;
+}
+
+.containerButton {
+  width: 70%; /*ancho*/
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#container_offset {
+  display: flex;
+  justify-items: center;
+}
+
+#container_telefonos {
+  display: flex;
+  justify-content: center;
+}
+
+#mensaje {
+  font-family: "Noto Sans KR", sans-serif;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px 0;
+  /*text-transform: uppercase;*/
+}
+
+#mensajefinal {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
+  background: cornsilk;
+  white-space: pre;
+}
+
+h4,
+p,
+ol {
+  margin-bottom: 50;
+  padding: 2%;
 }
