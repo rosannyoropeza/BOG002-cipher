@@ -7,21 +7,23 @@ let botonEncode = document.getElementById("button_encode");
 let mensajeFinal = document.getElementById("mensajefinal");
 let mensajeGuardado = " ";
 let offsetGuardado;
+let titulomensaje = document.getElementById("titulomensaje");
 
-mensaje.addEventListener("keyup", function () {
+/*mensaje.addEventListener("keyup", function () {
   mensaje.value = mensaje.value.toUpperCase();
   mensajeGuardado = mensaje.value;
   //console.log(mensajeGuardado);
-});
+});*/
 
 botonEncode.addEventListener("click", function () {
   //boton cifrar
+  mensajeGuardado = mensaje.value;
   offsetGuardado = parseInt(offset.value);
   if (!offsetGuardado) {
     alert("INGRESAR CLAVE");
-  } 
-  else {
+  } else {
     let mensajeFinalGuardado = cipher.encode(offsetGuardado, mensajeGuardado);
+    titulomensaje.innerHTML = "TU MENSAJE CIFRADO ES:";
     mensajeFinal.innerHTML = mensajeFinalGuardado;
     //console.log(typeof offsetGuardado, mensajeGuardado); // validar el  tipo  de dato que offset
     console.log(mensajeFinalGuardado);
@@ -30,9 +32,15 @@ botonEncode.addEventListener("click", function () {
 
 botonDecode.addEventListener("click", function () {
   // boton descifrar
+  mensajeGuardado = mensaje.value;
   offsetGuardado = parseInt(offset.value);
-  let mensajeFinalGuardado = cipher.decode(offsetGuardado, mensajeGuardado);
-  console.log(mensajeFinalGuardado)
-  mensajeFinal.innerHTML = mensajeFinalGuardado;
-  //console.log(cipher.decode);
+  if (!offsetGuardado) {
+    alert("INGRESAR CLAVE");
+  } else {
+    let mensajeFinalGuardado = cipher.decode(offsetGuardado, mensajeGuardado);
+    console.log(mensajeFinalGuardado);
+    titulomensaje.innerHTML = "TU MENSAJE DESCIFRADO ES:";
+    mensajeFinal.innerHTML = mensajeFinalGuardado;
+    //console.log(cipher.decode);
+  }
 });
