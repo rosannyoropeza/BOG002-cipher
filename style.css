@@ -99,12 +99,18 @@ section {
   /*text-transform: uppercase;*/
 }
 
+.message{
+    font-family: "Noto Sans KR", sans-serif;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 10px 0;
+  }
+
 #mensajefinal {
   border: 1px solid black;
   border-radius: 5px;
   margin: auto;
   background: cornsilk;
-  white-space: pre;
 }
 
 h4,
