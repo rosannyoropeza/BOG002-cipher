@@ -57,3 +57,5 @@ trabajar en  mini tareas y enforcarnos solo  en ellas, solicitar  las ayudantias
  Diseñar la aplicación pensando y entendiendo al usuario. se definio  el tema,  los usuarios para quienes esta dirigido
  Crear prototipos para obtener feedback e iterar. cambiamos varias veces el  diseño de pantallas alternando colores hasta obtener el modelo final
  Aplicar los principios de diseño visual (contraste, alineación, jerarquía) si
+
+ .
