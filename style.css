@@ -135,7 +135,8 @@ ol {
 }
 
 .modal {
-  background-color: #fff;
+  background: linear-gradient(to right, #fe98d7, #87cdd1);
+ /* background-color:#ffdff4; */
   width: 600px;
   max-width: 100%;
   padding: 30px 50px;

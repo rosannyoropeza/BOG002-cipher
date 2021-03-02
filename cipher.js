@@ -53,8 +53,14 @@ const cipher = {
       let mensajeAscci = mensajeGuardado.charCodeAt(i); //convertimos en  ascii 65,67,68,32,97,98,99
       if (mensajeAscci >= 65 && mensajeAscci <= 90) {
         formula = ((mensajeAscci - 65 + offsetGuardado) % 26) + 65;
+        if(formula <65){
+        formula= formula+26; 
+      }
       } else if (mensajeAscci >= 97 && mensajeAscci <= 122) {
         formula = ((mensajeAscci - 97 + offsetGuardado) % 26) + 97;
+        if(formula <97){
+          formula= formula+26; 
+        }
       } else formula = mensajeAscci;
 
       let mensajeFinal = String.fromCharCode(formula); //convertir de ascii  a caracter

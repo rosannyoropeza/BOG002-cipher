@@ -10,6 +10,7 @@ let modal_container = document.getElementById("modal_container");
 let cerrar = document.getElementById("cerrar");
 let modal = document.getElementById("modal");
 let enviarBoton = document.getElementById("enviar");
+let destino = document.getElementById("destino");
 
 /*mensaje.addEventListener("keyup", function () {
   mensaje.value = mensaje.value.toUpperCase();
@@ -21,18 +22,28 @@ function close() {
   modal_container.classList.remove("show");
 }
 
+// enviarBoton.addEventListener("click", function(){
+//   let celDestino = parseInt(destino.value);
+//   window.open("https://wa.me/" + celDestino + "?text=" + "");
+// });
+
 botonEncode.addEventListener("click", function () {
   //boton cifrar
   modal_container.classList.add("show");
   try {
     mensajeGuardado = mensaje.value;
     offsetGuardado = parseInt(offset.value);
-    let mensajeFinalGuardado = cipher.encode(offsetGuardado, mensajeGuardado);   
+    let mensajeFinalGuardado = cipher.encode(offsetGuardado, mensajeGuardado);
     modal.innerHTML = `<h3> TU MENSAJE CIFRADO ES:</h3><br> ${mensajeFinalGuardado}<br><br>`;
     enviarBoton.style.display = "inline";
-  } catch (error) {    
-    modal.innerHTML = error.message;    
-    enviarBoton.style.display = "none"; 
+    enviarBoton.addEventListener("click", function(){
+      let celDestino = parseInt(destino.value);
+      window.open("https://wa.me/" + celDestino + "?text=" + mensajeFinalGuardado);
+    });
+    
+  } catch (error) {
+    modal.innerHTML = error.message;
+    enviarBoton.style.display = "none";
   }
 });
 
@@ -42,11 +53,15 @@ botonDecode.addEventListener("click", function () {
   try {
     mensajeGuardado = mensaje.value;
     offsetGuardado = parseInt(offset.value);
-    let mensajeFinalGuardado = cipher.decode(offsetGuardado, mensajeGuardado);   
+    let mensajeFinalGuardado = cipher.decode(offsetGuardado, mensajeGuardado);
     modal.innerHTML = `<h3> TU MENSAJE DESCIFRADO ES:</h3><br> ${mensajeFinalGuardado}<br><br>`;
     enviarBoton.style.display = "inline";
-  } catch (error) {    
-    modal.innerHTML = error.message;    
-    enviarBoton.style.display = "none"; 
+    enviarBoton.addEventListener("click", function(){
+      let celDestino = parseInt(destino.value);
+      window.open("https://wa.me/" + celDestino + "?text=" + mensajeFinalGuardado);
+    });
+  } catch (error) {
+    modal.innerHTML = error.message;
+    enviarBoton.style.display = "none";
   }
 });
