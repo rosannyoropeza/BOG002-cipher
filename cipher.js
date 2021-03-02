@@ -2,8 +2,17 @@ const cipher = {
   //  decifrar
   decode: function (offsetGuardado, mensajeGuardado) {
     let formula; //declaro  variable  para aplicar  la  formula  cifrado
-    let resultado = " "; //declaro  donde se  va  a guardar la cadena  concatenada
-
+    let resultado = ""; //declaro  donde se  va  a guardar la cadena  concatenada
+    if (!offsetGuardado && !mensajeGuardado) {
+        throw new TypeError("INGRESE CLAVE Y MENSAJE"); 
+    }
+    if (!offsetGuardado) {
+      throw new TypeError("INGRESE CLAVE"); 
+    }
+    if (!mensajeGuardado) {
+      throw new TypeError("INGRESE MENSAJE");
+    }
+    else{
     for (let i = 0; i < mensajeGuardado.length; i++) {
       // recorremos la cadena de caracteres
       let mensajeAscci = mensajeGuardado.charCodeAt(i); //convertimos en  ascii
@@ -23,14 +32,23 @@ const cipher = {
       let mensajeFinal = String.fromCharCode(formula); //convertir de ascii  a caracter
       resultado += mensajeFinal;
     }
-    //console.log(resultado);
-    return resultado;
-  },
+        return resultado;
+  }},
 
   //cifrar
   encode: function (offsetGuardado, mensajeGuardado) {
     let formula; //declaro  variable  para aplicar  la  formula  cifrado
-    let resultado = " ";
+    let resultado = "";
+    if (!offsetGuardado && !mensajeGuardado) {
+      throw new TypeError("INGRESE CLAVE Y MENSAJE");
+    }
+    if (!offsetGuardado) {
+      throw new TypeError("INGRESE CLAVE"); 
+    }
+    if (!mensajeGuardado) {
+      throw new TypeError("INGRESE MENSAJE");
+    }
+    else{
     for (let i = 0; i < mensajeGuardado.length; i++) {
       let mensajeAscci = mensajeGuardado.charCodeAt(i); //convertimos en  ascii 65,67,68,32,97,98,99
       if (mensajeAscci >= 65 && mensajeAscci <= 90) {
@@ -42,9 +60,8 @@ const cipher = {
       let mensajeFinal = String.fromCharCode(formula); //convertir de ascii  a caracter
       resultado += mensajeFinal;
     }
-    //console.log(resultado);
-    return resultado;
-  },
+        return resultado;
+  }},
 };
 
 export default cipher;

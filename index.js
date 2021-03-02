@@ -23,37 +23,30 @@ function close() {
 
 botonEncode.addEventListener("click", function () {
   //boton cifrar
-  mensajeGuardado = mensaje.value;
-  offsetGuardado = parseInt(offset.value);
-  if (!offsetGuardado) {
-    modal_container.classList.add("show");
-    modal.innerHTML = `<p> INGRESA CLAVE </P>`;
-    enviarBoton.style.display = "none";
-  } else {
-    let mensajeFinalGuardado = cipher.encode(offsetGuardado, mensajeGuardado);
-    modal_container.classList.add("show");
-    modal.innerHTML = `<h3> TU MENSAJE CIFRADO ES:</h3><br>
-    ${mensajeFinalGuardado}<br>`;
+  modal_container.classList.add("show");
+  try {
+    mensajeGuardado = mensaje.value;
+    offsetGuardado = parseInt(offset.value);
+    let mensajeFinalGuardado = cipher.encode(offsetGuardado, mensajeGuardado);   
+    modal.innerHTML = `<h3> TU MENSAJE CIFRADO ES:</h3><br> ${mensajeFinalGuardado}<br><br>`;
     enviarBoton.style.display = "inline";
-
-    //console.log(typeof offsetGuardado, mensajeGuardado); // validar el  tipo  de dato que offset
-    //console.log(mensajeFinalGuardado);
+  } catch (error) {    
+    modal.innerHTML = error.message;    
+    enviarBoton.style.display = "none"; 
   }
 });
 
 botonDecode.addEventListener("click", function () {
   // boton descifrar
-  mensajeGuardado = mensaje.value;
-  offsetGuardado = parseInt(offset.value);
-  if (!offsetGuardado) {
-    modal_container.classList.add("show");
-    modal.innerHTML = `<p> INGRESA CLAVE </P>`;
-  } else {
-    let mensajeFinalGuardado = cipher.decode(offsetGuardado, mensajeGuardado);
-    modal_container.classList.add("show");
-    modal.innerHTML = `<h3> TU MENSAJE DESCIFRADO ES:</h3><br>
-    ${mensajeFinalGuardado}<br>`;
+  modal_container.classList.add("show");
+  try {
+    mensajeGuardado = mensaje.value;
+    offsetGuardado = parseInt(offset.value);
+    let mensajeFinalGuardado = cipher.decode(offsetGuardado, mensajeGuardado);   
+    modal.innerHTML = `<h3> TU MENSAJE DESCIFRADO ES:</h3><br> ${mensajeFinalGuardado}<br><br>`;
     enviarBoton.style.display = "inline";
-    //console.log(cipher.decode);
+  } catch (error) {    
+    modal.innerHTML = error.message;    
+    enviarBoton.style.display = "none"; 
   }
 });
