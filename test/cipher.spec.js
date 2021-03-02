@@ -29,6 +29,12 @@ describe("cipher", () => {
       );
     });
 
+
+    it('should return "TUVWXYZABCDEFGHIJKLMNOPQRS" for "ABCDEFGHIJKLMNOPQRSTUVWXYZ" with offset -33', () => {
+      expect(cipher.encode(-33, "ABCDEFGHIJKLMNOPQRSTUVWXYZ")).toBe(
+        "TUVWXYZABCDEFGHIJKLMNOPQRS"
+      );
+    }); 
     // Hacker edition
     //
     // [Español]
@@ -39,9 +45,9 @@ describe("cipher", () => {
     // Se quiser adicionar testes para letras minúsculas, descomente o teste
     // abaixo.
     //
-    it('should return "hijklmnopqrstuvwxyzabcdefg" for "abcdefghijklmnopqrstuvwxyz" with offset 33', () => {
-      expect(cipher.encode(33, "abcdefghijklmnopqrstuvwxyz")).toBe(
-        "hijklmnopqrstuvwxyzabcdefg"
+    it('should return "tuvwxyzabcdefghijklmnopqrs" for "abcdefghijklmnopqrstuvwxyz" with offset -33', () => {
+      expect(cipher.encode(-33, "abcdefghijklmnopqrstuvwxyz")).toBe(
+        "tuvwxyzabcdefghijklmnopqrs"
       );
     });
 
@@ -72,12 +78,18 @@ describe("cipher", () => {
       expect(() => cipher.decode(0, 0)).toThrow(TypeError);
     });
 
+    it('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "TUVWXYZABCDEFGHIJKLMNOPQRS" with offset -33', () => {
+      expect(cipher.decode(-33, "TUVWXYZABCDEFGHIJKLMNOPQRS")).toBe(
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+      );
+    });
+
+
     it('should return "ABCDEFGHIJKLMNOPQRSTUVWXYZ" for "HIJKLMNOPQRSTUVWXYZABCDEFG" with offset 33', () => {
       expect(cipher.decode(33, "HIJKLMNOPQRSTUVWXYZABCDEFG")).toBe(
         "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
       );
     });
-
     //
     // Hacker edition
     //
@@ -91,6 +103,10 @@ describe("cipher", () => {
     //
      it('should return "abcdefghijklmnopqrstuvwxyz" for "hijklmnopqrstuvwxyzabcdefg" with offset 33', () => {
       expect(cipher.decode(33, 'hijklmnopqrstuvwxyzabcdefg')).toBe('abcdefghijklmnopqrstuvwxyz');
+     });
+
+     it('should return "abcdefghijklmnopqrstuvwxyz" for "tuvwxyzabcdefghijklmnopqrs" with offset -33', () => {
+      expect(cipher.decode(-33, 'tuvwxyzabcdefghijklmnopqrs')).toBe('abcdefghijklmnopqrstuvwxyz');
      });
 
     // Hacker edition
