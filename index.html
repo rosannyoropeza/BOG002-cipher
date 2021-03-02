@@ -49,25 +49,23 @@
       </div>
      
       <div class="container">
-        <button id= "button_encode" class="button" >CIFRAR</button>
-        <button id= "button_decode" class="button" >DESCIFRAR</button>
+        <button id= "button_encode"  >CIFRAR</button>
+        <button id= "button_decode" >DESCIFRAR</button>
       </div>
       <div id="container_historial">
         <button name="boton "type="submit" id= "button_historial" ><img src="imagen/historial.png" width="70px"height="70px"></button>
-        <button type="boton" onclick="location.reload()"; id= "inicio" class="button">RESET</button>  <!--reset de formulario -->
+        <button type="boton" onclick="location.reload()"; id= "inicio" >RESET</button>  <!--reset de formulario -->
       </div>
     </section>
+    <section> <!--esta  seccion lleva la interaccion que muestra el  mensaje cifrado  o  desfrado -->           
+      <div id="modal_container" class="modal-container">
+        <div class="modal" > 
+          <p id="modal"></p>   
+          <button id="cerrar" ><img src="imagen/cerrar.png" width="50px"height="50px"></button>
+          <button type="button" id= "enviar" > <img src="imagen/logog.png" width="50px"height="50px"></button>
 
-    <section> <!--esta  seccion lleva la interaccion que muestra el  mensaje cifrado  o  desfrado -->
-      <div class="container">
-        <h2 id="titulomensaje"></h2><br>
-        <textarea name="mensajefinal" rows="10" cols="40"  placeholder="" id="mensajefinal" class="message"></textarea>
-      </div>
-
-      <div class="containerButton">
-        
-        <button type="button"  id= "enviar" class="button">ENVIAR <img src="imagen/logog.png" width="20px"height="20px"></button>
-      </div>
+        </div>    
+      
     </section>
 
         <script src="index.js" type="module"></script>

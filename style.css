@@ -1,117 +1,145 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-image: url(imagen/SECRETODEAMIGAS1.gif);
-    background-size: 100% 100%;
-    background-attachment: fixed;
-    font-family: "Noto Sans KR", sans-serif;
-  }
-  
-  header {
-    font-family: "Satisfy", cursive;
-    font-size: 20px;
-    width: 60%; /*andcho de la pantalla*/
-    height: 75px;
-    margin: 10px auto; /*centra el elemento*/
-    background: linear-gradient(to left, #fe98d7, #87cdd1);
-    display: flex; /*caja flexible*/
-    justify-content: center; /*los elementos flexibles se disponen a lo largo del eje principal en la línea en curso.*/
-    line-height: 75px; /*centrar verticamente*/
-  }
-  
-  .input {
-    font-family: "Noto Sans KR", sans-serif;
-    border-radius: 5px;
-    border: 1px solid black;
-    margin: 10px 0;
-    width: 20%;
-  }
-  
-  .button {
-    font-family: "Akaya Kanadaka", cursive;
-    border-radius: 10px;
-    padding: 5px;
-    border: 3px solid rgb(218, 100, 188);
-  box-shadow: 0 2px 4px rgb(0, 0,0.2);
-    display: inline-block;
-    background: linear-gradient(to left, #fe98d7, #87cdd1);
-    color: rgb(15, 15, 15);
-  }
-  
-  
-  #container_historial {
-    padding: 5px;
-    display: inline-block;
-    display: flex;
-    justify-content: flex-end;
-    box-shadow: none;
-  }
-  
-  #button_historial {
-    background-color: none;
-    border: 2px solid #fff;
-    box-shadow: none;
-  }
-  
-  .container {
-    width: 70%; /*ancho*/
-    margin: 10px auto;
-    display: block;
-    text-align: center;
-  }
-  
-  section {
-    width: 60%; /*ancho*/
-    margin: 10px auto;
-  }
-  
-  .containerButton {
-    width: 70%; /*ancho*/
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  #container_offset {
-    display: flex;
-    justify-items: center;
-  }
-  
-  #container_telefonos {
-    display: flex;
-    justify-content: center;
-  }
-  
-  #mensaje {
-    font-family: "Noto Sans KR", sans-serif;
-    border-radius: 5px;
-    border: 1px solid black;
-    margin: 10px 0;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .message {
-    font-family: "Noto Sans KR", sans-serif;
-    border-radius: 5px;
-    border: 1px solid black;
-    margin: 10px 0;
-  }
-  
-  #mensajefinal {
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: auto;
-    background: cornsilk;
-  }
-  
-  h4,
-  p,
-  ol {
-    margin-bottom: 50;
-    padding: 2%;
-  }
+body {
+  background-image: url(imagen/SECRETODEAMIGAS1.gif);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  font-family: "Noto Sans KR", sans-serif;
+}
 
-  
+header {
+  font-family: "Satisfy", cursive;
+  font-size: 20px;
+  width: 60%; /*andcho de la pantalla*/
+  height: 75px;
+  margin: 10px auto; /*centra el elemento*/
+  background: linear-gradient(to left, #fe98d7, #87cdd1);
+  display: flex; /*caja flexible*/
+  justify-content: center; /*los elementos flexibles se disponen a lo largo del eje principal en la línea en curso.*/
+  line-height: 75px; /*centrar verticamente*/
+}
+
+.input {
+  font-family: "Noto Sans KR", sans-serif;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px 0;
+  width: 20%;
+}
+
+button {
+  font-family: "Akaya Kanadaka", cursive;
+  border-radius: 10px;
+  padding: 5px;
+  border: 3px solid rgb(218, 100, 188);
+  box-shadow: 0 2px 4px rgb(0, 0, 0.2);
+  display: inline-block;
+  background: linear-gradient(to left, #fe98d7, #87cdd1);
+  color: rgb(15, 15, 15);
+  margin-right: 15px;
+}
+
+#container_historial {
+  padding: 5px;
+  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: none;
+}
+
+#button_historial {
+  background-color: none;
+  border: 2px solid #fff;
+  box-shadow: none;
+}
+
+.container {
+  width: 70%; /*ancho*/
+  margin: 10px auto;
+  display: block;
+  text-align: center;
+}
+
+section {
+  width: 60%; /*ancho*/
+  margin: 10px auto;
+}
+
+.containerButton {
+  width: 70%; /*ancho*/
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+#container_offset {
+  display: flex;
+  justify-items: center;
+}
+
+#container_telefonos {
+  display: flex;
+  justify-content: center;
+}
+
+#mensaje {
+  font-family: "Noto Sans KR", sans-serif;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
+.message {
+  font-family: "Noto Sans KR", sans-serif;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin: 10px 0;
+}
+
+#mensajefinal {
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: auto;
+  background: cornsilk;
+}
+
+h4,
+p,
+ol {
+  margin-bottom: 50;
+  padding: 2%;
+}
+
+.modal-container {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
