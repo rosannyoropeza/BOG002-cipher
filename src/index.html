@@ -15,7 +15,7 @@
   <body>
     <header>   <!--encabezado-->
           <img src="imagen/logo1.png" width="70" height="70">
-          <H1>Secretos de amigas</H1>
+          <h1>Secretos de amigas</h1>
           <img src="imagen/logo2.png" width="70" height="70">
     </header> 
     <section> <!--esta  seccion lleva la interacion de  inicio-->
@@ -27,7 +27,7 @@
         <ol><span style="text-align: start">
           <li>Ingresa tu numero de telefono</li>
           <li>Ingresa el numero del telefono de tu amiga</li>
-          <li>Ingresa la clave,  la clave corresponde a la cantidad de digitos te permitira cifrar o  descifrar, <b> <i>RECUERDA! </b> </i> descifrar el  mensaje debes saber con que clave se encripto</li>
+          <li>Ingresa la clave,  la clave corresponde a la cantidad de digitos te permitira cifrar o  descifrar, <b> <i>RECUERDA! </i>  </b> descifrar el  mensaje debes saber con que clave se encripto</li>
           <li>Ingresa el mensaje</li>
           <li>Selecciona la opcion que deseas</li> </span>
         </ol>
@@ -53,19 +53,18 @@
         <button id= "button_decode" >DESCIFRAR</button>
       </div>
       <div id="container_historial">
-        <button name="boton "type="submit" id= "button_historial" ><img src="imagen/historial.png" width="70px"height="70px"></button>
-        <button type="boton" onclick="location.reload()"; id= "inicio" >RESET</button>  <!--reset de formulario -->
+        <button name="boton" type="submit" id="button_historial"><img src="imagen/historial.png" width="70px" height="70px"></button>
+        <button type="boton" onclick="location.reload()" id= "inicio">RESET</button>  <!--reset de formulario -->
       </div>
     </section>
     <section> <!--esta  seccion lleva la interaccion que muestra el  mensaje cifrado  o  desfrado -->           
       <div id="modal_container" class="modal-container">
         <div class="modal" > 
           <p id="modal"></p>   
-          <button id="cerrar" ><img src="imagen/cerrar.png" width="50px"height="50px"></button>
-          <button type="button" id= "enviar" > <img src="imagen/logog.png" width="50px"height="50px"></button>
-
-        </div>    
-      
+          <button id="cerrar"><img src="imagen/cerrar.png" width="50px" height="50px"></button>
+          <button type="button" id="enviar"> <img src="imagen/logog.png" width="50px" height="50px"></button>
+        </div>     
+      </div>   
     </section>
 
         <script src="index.js" type="module"></script>
