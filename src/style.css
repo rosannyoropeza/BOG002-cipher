@@ -5,7 +5,7 @@
 }
 
 body {
-  background-image: url(imagen/SECRETODEAMIGAS1.gif);
+  background-image: url(imagen/SECRETO\ DE\ AMIGAS1.gif);
   background-size: 100% 100%;
   background-attachment: fixed;
   font-family: "Noto Sans KR", sans-serif;
@@ -28,7 +28,7 @@ header {
   border-radius: 5px;
   border: 1px solid black;
   margin: 10px 0;
-  width: 20%;
+  height: 30px;
 }
 
 button {
@@ -58,7 +58,7 @@ button {
 }
 
 .container {
-  width: 70%; /*ancho*/
+  width: 100%; /*ancho*/
   margin: 10px auto;
   display: block;
   text-align: center;
@@ -83,7 +83,9 @@ section {
 
 #container_telefonos {
   display: flex;
-  justify-content: center;
+  justify-content: start;
+  align-items: center;
+  margin-left: 107px;
 }
 
 #mensaje {
@@ -108,9 +110,9 @@ section {
 }
 
 h4,
-p,
-ol {
-  margin-bottom: 50;
+ol,
+h1 {
+  margin-bottom: 40;
   padding: 2%;
 }
 
@@ -136,11 +138,18 @@ ol {
 
 .modal {
   background: linear-gradient(to right, #fe98d7, #87cdd1);
- /* background-color:#ffdff4; */
+  /* background-color:#ffdff4; */
   width: 600px;
   max-width: 100%;
   padding: 30px 50px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
+}
+
+.imagen {
+  width: 350px;
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0.7);
 }

@@ -1,12 +1,17 @@
-# SECRETOS DE AMIGAS
+# ***SECRETOS DE AMIGAS***
 
-Quiénes son los principales usuarios de producto: Mujeres  que quieren enviar mensajes  ocultos entre amigas
+## ¿Quiénes son los principales usuarios de producto?
+ Mujeres  que quieren enviar mensajes  ocultos entre amigas de todas las  edades 
 
-Cuáles son los objetivos de estos usuarios en relación con tu producto: Encriptar mensajes atraves de la app que estamos creando para enviarlos por sus  redes  sociales (whatsapp)
+## ¿Cuáles son los objetivos de estos usuarios en relación con tu producto?
+ Encriptar mensajes atraves de la app que estamos creando para enviarlos por sus  redes  sociales (whatsapp)
 
-Cómo crees que el producto que estás creando está resolviendo sus problemas: Por que se esta facilitando la comunicacion entre mujeres en  un lenguaje cifrado  que solo ellas entenderan
+## ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
+ Por que se esta facilitando la comunicacion entre mujeres en  un lenguaje cifrado  que solo ellas entenderan
 
-# Retro spint 1
+ ![prototipo](src/imagen/prototipo.jpg) 
+ 
+ # Retro spint 1
 
 ## ¿Qué funcionó en el sprint?
 La planeacion, hacer el  trabajo  en conjunto  y no dividirnos tareas, trabajar en  mini tareas  avanzando un paso  a la vez, sin adelantarnos, nos permitio enfoncarnos en la investicacion de cada tema.
@@ -21,40 +26,80 @@ se cumplieron los obejetivos propuestos para esta semana.
 ## ¿Qué funcionó para completar los que se completaron?
 trabajar en  mini tareas y enforcarnos solo  en ellas, solicitar  las ayudantias pára lograr  desbloquearnos
 
-## ¿Cómo relacionan los objetivos con las tareas de desarrollo?
- 
+# Objetivos de aprendizaje
+
+Trabajando en parejas aprenderán a construir una aplicación web que interactuará
+con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
+como tecnologías.
+
 ### HTML y CSS
- [] Uso de HTML semántico. *Tarea de maqueteado
- [] Uso de selectores de CSS. *Tarea de maqueteado
- [] Construir tu aplicación respetando el diseño realizado (maquetación). *Tarea de maqueteado  y  prototipado
+
+* [ ] Uso de HTML semántico.
+* [ ] Uso de selectores de CSS.
+* [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
 
 ### DOM
- [] Uso de selectores del DOM. usamos el  document.ElementById lo usamos en  insertar mensaje y  desplazamiento 
- [] Manejo de eventos del DOM. .addEventListener (click  keyup)  lo usamos en  insertar mensaje y  desplazamiento 
- [] Manipulación dinámica del DOM.   usamos innerHTML  en la tarea de mostrar mensaje
+
+* [ ] Uso de selectores del DOM.
+* [ ] Manejo de eventos del DOM.
+* [ ] Manipulación dinámica del DOM
+(appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
 ### JavaScript
- [] Manipulación de strings. los usamos en la captura del  mensaje,  al  momento  de convertir en  cod ascii  y  vicerversa, para  concatenar  el mensaje final
- [] Uso de condicionales (if-else | switch | operador ternario) if-else  los usamos en la formula   de  cifrar  y desifrar,  los  usamos tambien  en  un alert  para indicarle al  usuario  q ingrese el offset
- [] Uso de bucles (for | for..in | for..of | while) usamos for en la funciones  para recorrer el string  e ir cumpliendo la formula
- [] Uso de funciones (parámetros | argumentos | valor de retorno) usamos los paramentros que fueron enviados desde el  index.js a  cipher.js,  se  retorno (return) de las funciones el string del  mensaje  final
- [] Declaración correcta de variables (const & let) se usaron estas dos  variables 
 
+* [ ] Manipulación de strings.
+* [ ] Uso de condicionales (if-else | switch | operador ternario)
+* [ ] Uso de bucles (for | for..in | for..of | while)
+* [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
+* [ ] Declaración correcta de variables (const & let)
 
 ### Testing
- [] Testeo unitario. // no esta  no dentro de los objetivos en el  sprint
+
+* [ ] Testeo unitario.
 
 ### Estructura del código y guía de estilo
- [] Organizar y dividir el código en módulos (Modularización) si  se aplico  tenemos la funciones puras en el  cipher  sin aplicar DOM
- [] Uso de identificadores descriptivos (Nomenclatura | Semántica) 
- [] Uso de linter (ESLINT) 
+
+* [ ] Organizar y dividir el código en módulos (Modularización)
+* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+* [ ] Uso de linter (ESLINT)
 
 ### Git y GitHub
- [] Uso de comandos de git (add | commit | pull | status | push) si se aplico  todo
- [] Manejo de repositorios de GitHub (clone | fork | gh-pages) pendiente  gh-pages
+
+* [ ] Uso de comandos de git (add | commit | pull | status | push)
+* [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
 
 ### UX
- [] Diseñar la aplicación pensando y entendiendo al usuario. se definio  el tema,  los usuarios para quienes esta dirigido
- [] Crear prototipos para obtener feedback e iterar. cambiamos varias veces el  diseño de pantallas alternando colores hasta obtener el modelo final
- [] Aplicar los principios de diseño visual (contraste, alineación, jerarquía) si
 
+* [ ] Diseñar la aplicación pensando y entendiendo al usuario.
+* [ ] Crear prototipos para obtener feedback e iterar.
+* [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
+
+
+# Checklist
+### Parte Obligatoria
+
+* [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
+* [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
+  el producto.
+* [ ] `README.md` explica claramente cómo el producto soluciona los
+  problemas/necesidades de los usuarios.
+* [x] Usa VanillaJS.
+* [x] No utiliza `this`.
+* [x] Implementa `cipher.encode`.
+* [x] Implementa `cipher.decode`.
+* [x] Pasa linter con configuración provista.
+* [x] Pasa pruebas unitarias.
+* [x] Pruebas unitarias cubren 70% de _statements_, _functions_ y _lines_, y un
+  mínimo del 50% de _branches_.
+* [x] Interfaz permite elegir el `offset` o _desplazamiento_ a usar en el
+  cifrado/descifrado.
+* [x] Interfaz permite escribir un texto para ser cifrado.
+* [x] Interfaz muestra el resultado del cifrado correctamente.
+* [x] Interfaz permite escribir un texto para ser descifrado.
+* [x] Interfaz muestra el resultado del descifrado correctamente.
+
+### Parte Opcional: "Hacker edition"
+
+* [x] Cifra/descifra minúsculas
+* [ ] Cifra/descifra _otros_ caracteres (espacios, puntuación, `ñ`, `á`, ...)
+* [x] Permite usar un `offset` negativo.

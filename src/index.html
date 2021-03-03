@@ -1,72 +1,133 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">  
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&display=swap" rel="stylesheet">
-
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+  </head>
   <body>
-    <header>   <!--encabezado-->
-          <img src="imagen/logo1.png" width="70" height="70">
-          <h1>Secretos de amigas</h1>
-          <img src="imagen/logo2.png" width="70" height="70">
-    </header> 
-    <section> <!--esta  seccion lleva la interacion de  inicio-->
-        
-      <div  class="container"> 
+    <header>
+      <!--encabezado-->
+      <img src="imagen/logo1.png" width="70" height="70" />
+      <h1>Secretos de amigas</h1>
+      <img src="imagen/logo2.png" width="70" height="70" />
+    </header>
+    <section>
+      <!--esta  seccion lleva la interacion de  inicio-->
+
+      <div class="container">
         <h1>BIENVENIDAS</h1>
-        <p>Con secretos de amigas puedes  enviarte mensajes encriptados con quien desees, para que tus secretos viajen de forma segura</p> 
-        <h4><span style= "color: #734199"> INSTRUCCIONES</span></h4>
-        <ol><span style="text-align: start">
-          <li>Ingresa tu numero de telefono</li>
-          <li>Ingresa el numero del telefono de tu amiga</li>
-          <li>Ingresa la clave,  la clave corresponde a la cantidad de digitos te permitira cifrar o  descifrar, <b> <i>RECUERDA! </i>  </b> descifrar el  mensaje debes saber con que clave se encripto</li>
-          <li>Ingresa el mensaje</li>
-          <li>Selecciona la opcion que deseas</li> </span>
+        <p>
+          Con secretos de amigas puedes enviarte mensajes encriptados con quien
+          desees, para que tus secretos viajen de forma segura
+        </p>
+        <h4><span style="color: #734199"> INSTRUCCIONES</span></h4>
+        <ol>
+          <span style="text-align: start">
+            <li>
+              Ingresa el numero del telefono de tu amiga con el prefijo del pais
+            </li>
+            <p>
+              (si no lo sabes el boton prefijos te direcciona a una pagina donde
+              lo puedes consultar)
+            </p>
+            <li>
+              Ingresa la clave, esta corresponde a la cantidad de
+              desplazamientos en el alfabeto que te permitiran cifrar o
+              descifrar el mensaje
+            </li>
+            <p>
+              <b> <i>RECUERDA! </i> </b> para descifrar el mensaje debes saber
+              con que clave se encripto)
+            </p>
+            <li>Ingresa el mensaje</li>
+            <li>Selecciona la opcion que deseas</li>
+          </span>
         </ol>
-      </div> 
-      
-      <div id="container_telefonos" >
-        <img src="imagen/tel1.png"  width="50px" height="50px">
-        <input type="text" placeholder=" tel origen" id="origen" class="input">
-        <img src="imagen/tel2.png"  width="50px" height="50px">
-        <input type="number" placeholder=" tel destino" id="destino" class="input">
+      </div>
+
+      <div id="container_telefonos">
+        <img
+          src="imagen/prefijos.png"
+          width="100px"
+          height="100px"
+          id="prefijo"
+        />
+       <a href="#destino"> <img src="imagen/tel2.png" width="100px" height="100px"></a>
+        <input
+          type="number"
+          placeholder=" tel destino"
+          id="destino"
+          class="input"
+        />
       </div>
 
       <div class="container">
-        <input type="number" placeholder=" ingresar clave" id="offset" class="input">
+        <input
+          type="number"
+          placeholder=" ingresar clave"
+          id="offset"
+          class="input"
+        />
       </div>
 
       <div class="container">
-        <textarea name="mensaje" rows="10" cols="40"  placeholder="Escribe  tu  mensaje" id="mensaje"></textarea>
+        <textarea
+          name="mensaje"
+          rows="10"
+          cols="40"
+          placeholder="Escribe  tu  mensaje"
+          id="mensaje"
+        ></textarea>
       </div>
-     
+
       <div class="container">
-        <button id= "button_encode"  >CIFRAR</button>
-        <button id= "button_decode" >DESCIFRAR</button>
+        <button id="button_encode">CIFRAR</button>
+        <button id="button_decode">DESCIFRAR</button>
       </div>
       <div id="container_historial">
-        <button name="boton" type="submit" id="button_historial"><img src="imagen/historial.png" width="70px" height="70px"></button>
-        <button type="boton" onclick="location.reload()" id= "inicio">RESET</button>  <!--reset de formulario -->
+        <img
+          src="imagen/historial.png"
+          width="70px"
+          height="70px"
+          id="historial"
+        />
+        <button type="boton" onclick="location.reload()" id="inicio">
+          RESET
+        </button>
+        <!--reset de formulario -->
       </div>
     </section>
-    <section> <!--esta  seccion lleva la interaccion que muestra el  mensaje cifrado  o  desfrado -->           
+    <section>
+      <!--esta  seccion lleva la interaccion que muestra el  mensaje cifrado  o  desfrado -->
       <div id="modal_container" class="modal-container">
-        <div class="modal" > 
-          <p id="modal"></p>   
-          <button id="cerrar"><img src="imagen/cerrar.png" width="50px" height="50px"></button>
-          <button type="submit" id="enviar" > <img src="imagen/logog.png" width="50px" height="50px"></button>
-        </div>     
-      </div>   
+        <div class="modal">
+          <p id="modal"></p>
+          <button id="cerrar">
+            <img src="imagen/cerrar.png" width="50px" height="50px" />
+          </button>
+          <button type="submit" id="enviar">
+            <img src="imagen/logog.png" width="50px" height="50px" />
+          </button>
+        </div>
+      </div>
     </section>
 
-        <script src="index.js" type="module"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
