@@ -12,10 +12,18 @@ Encriptar mensajes atraves de la app que estamos creando para enviarlos por sus 
 
 Por que se esta facilitando la comunicacion entre mujeres en un lenguaje cifrado que solo ellas entenderan
 
-![prototipo](src/imagen/prototipo.jpg)
+## Descripcion
+Secretos de  amigas nace de la nacesidad de mantener privada cierta informacion, si desea  comunicar por whatsapp, se  reaalizaron varios porototipos en papel hasta  llegar el  prototipo final, para el  diseño y eleccion de colores se eligieron basados en la preferencia del usuario  final
 
 <img src="src/imagen/prototipo.jpg" width="300px"    height="300px">
 
+prototipo final
+
+<img src="src/imagen/secreto_de_amigas.jpg" width="300px"    height="200px">
+
+Producto final
+
+***************************************
 # Retro spint 1
 
 ## ¿Qué funcionó en el sprint?
@@ -86,10 +94,10 @@ como tecnologías.
 
 ### Parte Obligatoria
 
-- [ ] `README.md` incluye info sobre proceso y decisiones de diseño.
-- [ ] `README.md` explica claramente quiénes son los usuarios y su relación con
+- [x] `README.md` incluye info sobre proceso y decisiones de diseño.
+- [x] `README.md` explica claramente quiénes son los usuarios y su relación con
       el producto.
-- [ ] `README.md` explica claramente cómo el producto soluciona los
+- [x] `README.md` explica claramente cómo el producto soluciona los
       problemas/necesidades de los usuarios.
 - [x] Usa VanillaJS.
 - [x] No utiliza `this`.
