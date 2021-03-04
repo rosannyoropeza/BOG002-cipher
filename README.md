@@ -2,18 +2,22 @@
 
 ## ¿Quiénes son los principales usuarios de producto?
 
-Mujeres que quieren enviar mensajes ocultos entre amigas de todas las edades
+Mujeres  de todas las edades que desean comunicarse con amigas mediante mensajes ocultos.
 
 ## ¿Cuáles son los objetivos de estos usuarios en relación con tu producto?
 
-Encriptar mensajes atraves de la app que estamos creando para enviarlos por sus redes sociales (whatsapp)
+Encriptar mensajes a través de la aplicación  ***Secretos de Amigas*** para enviarlos por sus red social **WhatsApp**.
 
 ## ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
 
-Por que se esta facilitando la comunicacion entre mujeres en un lenguaje cifrado que solo ellas entenderan
+Porque esta facilitando la comunicación entre mujeres en un lenguaje cifrado que solo ellas entenderán.
 
-## Descripcion
-Secretos de  amigas nace de la nacesidad de mantener privada cierta informacion, si desea  comunicar por whatsapp, se  reaalizaron varios porototipos en papel hasta  llegar el  prototipo final, para el  diseño y eleccion de colores se eligieron basados en la preferencia del usuario  final
+## Descripción
+***Secretos de  amigas*** nace de la necesidad de mantener privada cierta información que  las usuarias de  **WhatsApp** desean compartir con sus contactos, sin que la red social pueda tener acceso a ella. 
+
+Para el diseño de la aplicación se realizaron varios prototipos, siendo el inicial uno papel, en el que se plasmo en  como seria la interfaz del usuario, entendiendo que la interfaz fuera precisa y concisa con la información que se requiere para el uso de la misma, evitando así que el usuario cometa errores durante su interacción. Ademas le permita de forma intuitiva manejar la interfaz de una  manera sencilla y práctica.
+
+Para el prototipado final  se realizo mediante el  sitio web de diseño gráfico llamado ***Canva***, después de haber obtenido el feedback del prototipo inicial, se plasmaron las recomendaciones referente al diseño, en esta etapa básicamente se  emplearon códigos de colores para crear las combinaciones implementadas y se profundizo en las funcionalidades  para ser mas  agradable a la vista la interfaz.
 
 <img src="src/imagen/prototipo.jpg" width="300px"    height="300px">
 
@@ -23,24 +27,36 @@ prototipo final
 
 Producto final
 
-***************************************
-# Retro spint 1
+# Instalación y configuración del proyecto
 
-## ¿Qué funcionó en el sprint?
+1. <a href="https://nodejs.org/es/download/current/">Instalar  Node.js versión v13.11.0</a>
+2. Abrir  el editor de texto <a href="https://nodejs.org/es/download/current/">(Visual Studio Code)</a>.
+3. Realiza un  *fork* en GitHub de este repositorio que contiene el *boilerplate*.
+4. Ejecuta en la terminal el comando  (git clone https://github.com/rosannyoropeza/BOG002-cipher.git).
+5. Cierra el editor.
+6. Desde la carpeta BOG002-cipher realiza un click derecho, abrir con editor de texto (Visual Studio Code).
+7. Habilita la terminal *bash* para ejecutar el programa. 
+2. Para ver la interfaz del programa en el navegador, usa el comando npm start para arrancar el servidor web y dirígete a http://localhost:5000 en tu navegador.
 
-La planeacion, hacer el trabajo en conjunto y no dividirnos tareas, trabajar en mini tareas avanzando un paso a la vez, sin adelantarnos, nos permitio enfoncarnos en la investicacion de cada tema.
 
-## ¿Qué se puede hacer diferente?
+********************************
+# Retro Sprint #1
 
-dedicrle mas tiempo en la tarde en conjunto
+***¿Qué funcionó en el sprint?***
 
-## ¿Por qué no se cubrieron algunos?
+La planificación fue la base fundamental, ya que nos permitió  hacer el pyoyecto en conjunto sin  dividirnos tareas.  Asimismo  facilito el ir avanzando en mini tareas un paso a la vez de forma ordenada. Lo cual arrojo como punto positivo enfocarnos en los temas de investigación que fueran necesarios. 
 
-se cumplieron los obejetivos propuestos para esta semana.
+***¿Qué se puede hacer diferente?***
 
-## ¿Qué funcionó para completar los que se completaron?
+Programar más horas para trabajar en conjunto.
 
-trabajar en mini tareas y enforcarnos solo en ellas, solicitar las ayudantias pára lograr desbloquearnos
+***¿Por qué no se cubrieron algunos?***
+
+Todos los objetivos propuestos se cumplieron de manera satisfactoria.
+
+***¿Qué funcionó para completar los que se completaron?***
+
+Organizar el proyecto en mini tareas para así enfocarnos solo en ellas, y solicitar las ayudantías para despejar dudas que permitieran seguir avanzando. 
 
 # Objetivos de aprendizaje
 
@@ -50,28 +66,28 @@ como tecnologías.
 
 ### HTML y CSS
 
-- [ ] Uso de HTML semántico.
-- [ ] Uso de selectores de CSS.
-- [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
+- [x] Uso de HTML semántico.
+- [x] Uso de selectores de CSS.
+- [x] Construir tu aplicación respetando el diseño realizado (maquetación).
 
 ### DOM
 
-- [ ] Uso de selectores del DOM.
-- [ ] Manejo de eventos del DOM.
-- [ ] Manipulación dinámica del DOM
+- [x] Uso de selectores del DOM.
+- [x] Manejo de eventos del DOM.
+- [x] Manipulación dinámica del DOM
       (appendChild |createElement | createTextNode| innerHTML | textContent | etc.)
 
 ### JavaScript
 
-- [ ] Manipulación de strings.
-- [ ] Uso de condicionales (if-else | switch | operador ternario)
-- [ ] Uso de bucles (for | for..in | for..of | while)
-- [ ] Uso de funciones (parámetros | argumentos | valor de retorno)
-- [ ] Declaración correcta de variables (const & let)
+- [x] Manipulación de strings.
+- [x] Uso de condicionales (if-else | switch | operador ternario)
+- [x] Uso de bucles (for | for..in | for..of | while)
+- [x] Uso de funciones (parámetros | argumentos | valor de retorno)
+- [x] Declaración correcta de variables (const & let)
 
 ### Testing
 
-- [ ] Testeo unitario.
+- [x] Testeo unitario.
 
 ### Estructura del código y guía de estilo
 
@@ -81,14 +97,14 @@ como tecnologías.
 
 ### Git y GitHub
 
-- [ ] Uso de comandos de git (add | commit | pull | status | push)
-- [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+- [x] Uso de comandos de git (add | commit | pull | status | push)
+- [x] Manejo de repositorios de GitHub (clone | fork | gh-pages)
 
 ### UX
 
-- [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-- [ ] Crear prototipos para obtener feedback e iterar.
-- [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
+- [x] Diseñar la aplicación pensando y entendiendo al usuario.
+- [x] Crear prototipos para obtener feedback e iterar.
+- [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
 
 # Checklist
 
