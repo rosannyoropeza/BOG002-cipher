@@ -1,21 +1,21 @@
 # **_SECRETOS DE AMIGAS_**
 
-## ¿Quiénes son los principales usuarios de producto?
+***¿Quiénes son los principales usuarios de producto?***
 
 Mujeres  de todas las edades que desean comunicarse con amigas mediante mensajes ocultos.
 
-## ¿Cuáles son los objetivos de estos usuarios en relación con tu producto?
+***¿Cuáles son los objetivos de estos usuarios en relación con tu producto?***
 
 Encriptar mensajes a través de la aplicación  ***Secretos de Amigas*** para enviarlos por sus red social **WhatsApp**.
 
-## ¿Cómo crees que el producto que estás creando está resolviendo sus problemas?
+***¿Cómo crees que el producto que estás creando está resolviendo sus problemas?***
 
 Porque esta facilitando la comunicación entre mujeres en un lenguaje cifrado que solo ellas entenderán.
 
 ## Descripción
 ***Secretos de  amigas*** nace de la necesidad de mantener privada cierta información que  las usuarias de  **WhatsApp** desean compartir con sus contactos, sin que la red social pueda tener acceso a ella. 
 
-Para el diseño de la aplicación se realizaron varios prototipos, siendo el inicial uno papel, en el que se plasmo en  como seria la interfaz del usuario, entendiendo que la interfaz fuera precisa y concisa con la información que se requiere para el uso de la misma, evitando así que el usuario cometa errores durante su interacción. Ademas le permita de forma intuitiva manejar la interfaz de una  manera sencilla y práctica.
+Para el diseño de la aplicación se realizaron varios prototipos, siendo el inicial uno en papel, en el que se plasmo en  como seria la interfaz del usuario, entendiendo que la interfaz fuera precisa y concisa con la información que se requiere para el uso de la misma, evitando así que el usuario cometa errores durante su interacción. Ademas le permita de forma intuitiva manejar la interfaz de una  manera sencilla y práctica.
 
 Para el prototipado final  se realizo mediante el  sitio web de diseño gráfico llamado ***Canva***, después de haber obtenido el feedback del prototipo inicial, se plasmaron las recomendaciones referente al diseño, en esta etapa básicamente se  emplearon códigos de colores para crear las combinaciones implementadas y se profundizo en las funcionalidades  para ser mas  agradable a la vista la interfaz.
 
@@ -36,10 +36,9 @@ Producto final
 5. Cierra el editor.
 6. Desde la carpeta BOG002-cipher realiza un click derecho, abrir con editor de texto (Visual Studio Code).
 7. Habilita la terminal *bash* para ejecutar el programa. 
-2. Para ver la interfaz del programa en el navegador, usa el comando npm start para arrancar el servidor web y dirígete a http://localhost:5000 en tu navegador.
+2. Para ver la interfaz del programa en el navegador, usa el comando *npm start* para arrancar el servidor web y dirígete a http://localhost:5000 en tu navegador.
 
 
-********************************
 # Retro Sprint #1
 
 ***¿Qué funcionó en el sprint?***
