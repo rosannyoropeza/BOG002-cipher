@@ -1,5 +1,6 @@
 import cipher from "./cipher.js";
 import {information} from "./Informacion.js";
+import prefijos_paises from "./prefijos_paises.js";
 
 const divLogo = document.getElementById("divLogo");
 let mensaje = document.getElementById("mensaje");
@@ -16,17 +17,26 @@ let destino = document.getElementById("destino");
 let prefijo = document.getElementById("prefijo");
 let historial = document.getElementById("historial");
 const informacion=document.getElementById("informacion");
+const listaPaises=document.getElementById("paises");
+const PrefijoTelfono = document.getElementById("PrefijoTelfono");
 
-
-// window.addEventListener('load', () => {
-//   divLogo.appendChild(logo());
-//   console.log("esto es el logo")
-// });
-
+  prefijos_paises.forEach((pais)=>{
+    const option = document.createElement("option");
+    option.setAttribute("value", `${pais.PAIS}`);
+    listaPaises.appendChild(option);
+  });
 
 // prefijo.addEventListener("click", prefijos);
-// function prefijos() {
-//   window.open("http://eldiamanteescarbon.com/Informacion/Info-Prefijos.htm");
+// function prefijos(data) {
+//   console.log(data)
+// }
+
+// function prefijosPaises(data){
+//   data.forEach((paises){
+//     if(paises===PAIS)
+//        paises.PAIS.PREFIJO
+//   });
+// return data
 // }
 
 cerrar.addEventListener("click", close);

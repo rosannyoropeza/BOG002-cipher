@@ -34,33 +34,36 @@
       </div>
 
       <div class="container">
-        <div id="containerForm">
-          <form>
-            <input list="browsers" name="browser" id="browser" placeholder="Elige el pais destino" class="input">
-            <datalist id="browsers">
-              <option value="Edge">
-              <option value="Firefox">
-              <option value="Chrome">
-              <option value="Opera">
-              <option value="Safari">
-            </datalist>
-            <input type="number" placeholder="+57" id="PrefijoTelfono" class="input" />
-            <input type="number" placeholder="Teléfono de destino" id="destino" class="input" />
-            <input type="number" placeholder="Ingrese el código de encriptación" id="offset" class="input" />
-            <textarea name="mensaje" rows="5" clis="101" placeholder="Escriba su mensaje" id="mensaje"
+        <form>
+            <div id="containerForm">
+              <input list="paises" name="browser" id="prefijo" placeholder="Elige el pais destino" class="input">
+              <datalist id="paises">
+              </datalist>
+              <input type="number" placeholder="+57" id="PrefijoTelfono" class="input" />
+              <input type="number" placeholder="Teléfono de destino" id="destino" class="input" />
+              <input type="number" placeholder="Ingrese el código de encriptación" id="offset" class="input" />
+              <textarea name="mensaje" rows="5" clis="101" placeholder="Escriba su mensaje" id="mensaje"
               class="input"></textarea>
+            </div>
+              <div class="container">
+                <button id="button_encode" class="button">CIFRAR</button>
+                <button id="button_decode" class="button">DESCIFRAR</button>
+                <button type="reset" class="button">RESET</button>
+                <!-- <button type="boton" onclick="location.reload()" id="inicio" class="button">RESET</button> -->
+                <!--reset de formulario -->
+              </div>
           </form>
-        </div>
       </div>
 
-      <section>
+      <!-- <section>
         <div class="container">
           <button id="button_encode" class="button">CIFRAR</button>
           <button id="button_decode" class="button">DESCIFRAR</button>
-          <button type="boton" onclick="location.reload()" id="inicio" class="button">RESET</button>
+          <button type="reset" class="button">RESET</button>
+          <!-- <button type="boton" onclick="location.reload()" id="inicio" class="button">RESET</button> -->
           <!--reset de formulario -->
-        </div>
-      </section>
+        <!-- </div>
+      </section> --> 
 
       <div>
         <p id="enlaceInfo">Para más información sobre esta aplicación, haga <a href="#" data-id="modal_container" id="informacion">Click aqui</a>

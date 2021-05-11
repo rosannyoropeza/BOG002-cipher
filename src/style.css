@@ -57,6 +57,7 @@ body{
   background-color: #E44F9C;
   box-sizing: border-box;
   border-radius: 5px;
+  margin: auto;
 }
 
 .input{
@@ -97,9 +98,9 @@ section{
   font-size: 0.9rem;
   border: solid 2px  #C93384;
   border-radius: 5px;
-  width: 32%; 
+  width: 28%; 
   height: 50px;
-  margin:auto;
+  margin: 20px 5px;
 }
 
 #enlaceInfo{
