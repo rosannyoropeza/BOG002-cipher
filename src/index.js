@@ -1,5 +1,7 @@
 import cipher from "./cipher.js";
+import {information} from "./Informacion.js";
 
+const divLogo = document.getElementById("divLogo");
 let mensaje = document.getElementById("mensaje");
 let offset = document.getElementById("offset");
 let botonDecode = document.getElementById("button_decode");
@@ -13,28 +15,32 @@ let enviarBoton = document.getElementById("enviar");
 let destino = document.getElementById("destino");
 let prefijo = document.getElementById("prefijo");
 let historial = document.getElementById("historial");
+const informacion=document.getElementById("informacion");
 
-/*mensaje.addEventListener("keyup", function () {
-  mensaje.value = mensaje.value.toUpperCase();
-  mensajeGuardado = mensaje.value;
-  //console.log(mensajeGuardado);
-});*/
-prefijo.addEventListener("click", prefijos);
-function prefijos() {
-  window.open("http://eldiamanteescarbon.com/Informacion/Info-Prefijos.htm");
-}
+
+// window.addEventListener('load', () => {
+//   divLogo.appendChild(logo());
+//   console.log("esto es el logo")
+// });
+
+
+// prefijo.addEventListener("click", prefijos);
+// function prefijos() {
+//   window.open("http://eldiamanteescarbon.com/Informacion/Info-Prefijos.htm");
+// }
 
 cerrar.addEventListener("click", close);
 function close() {
   modal_container.classList.remove("show");
 }
 
-historial.addEventListener("click", function(){
+informacion.addEventListener("click", function(){
   modal_container.classList.add("show");
   enviarBoton.style.display = "none";
-  modal.innerHTML = `<img src="imagen/construccion.png" class="imagen"><br>
-  <p>SITIO EN CONSTRUCCION!</p><br>`
+  modal.innerHTML="";
+  modal.appendChild(information());
 })
+
 // enviarBoton.addEventListener("click", function(){
 //   let celDestino = parseInt(destino.value);
 //   window.open("https://wa.me/" + celDestino + "?text=" + "");

@@ -1,133 +1,91 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <header>
-      <!--encabezado-->
-      <img src="imagen/logo1.png" width="70" height="70" />
-      <h1>Secretos de amigas</h1>
-      <img src="imagen/logo2.png" width="70" height="70" />
+
+<head>
+  <meta charset="utf-8" />
+  <title>Secretos de Amig@s</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Salsa&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="imagen/dove_529912.png" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <meta name="viewport"
+    content="width=device-width, user-scalable= no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+
+<body>
+  <div class="conteiner">
+    <header class="conteinerHeader">
+      <!-- <img id="divLogo"/> -->
+      <img src="imagen/dove_529912.png" class="logoDoveSecretos" />
+      <img src="imagen/SecretosdeAmig@s.svg" class="logoSecretos" />
     </header>
-    <section>
-      <!--esta  seccion lleva la interacion de  inicio-->
 
-      <div class="container">
-        <h1>BIENVENIDAS</h1>
-        <p>
-          Con secretos de amigas puedes enviarte mensajes encriptados con quien
-          desees, para que tus secretos viajen de forma segura
-        </p>
-        <h4><span style="color: #734199"> INSTRUCCIONES</span></h4>
-        <ol>
-          <span style="text-align: start">
-            <li>
-              Ingresa el numero del telefono de tu amiga con el prefijo del pais
-            </li>
-            <p>
-              (si no lo sabes el boton prefijos te direcciona a una pagina donde
-              lo puedes consultar)
-            </p>
-            <li>
-              Ingresa la clave, esta corresponde a la cantidad de
-              desplazamientos en el alfabeto que te permitiran cifrar o
-              descifrar el mensaje
-            </li>
-            <p>
-              <b> <i>RECUERDA! </i> </b> para descifrar el mensaje debes saber
-              con que clave se encripto)
-            </p>
-            <li>Ingresa el mensaje</li>
-            <li>Selecciona la opcion que deseas</li>
-          </span>
-        </ol>
-      </div>
-
-      <div id="container_telefonos">
-        <img
-          src="imagen/prefijos.png"
-          width="100px"
-          height="100px"
-          id="prefijo"
-        />
-       <a href="#destino"> <img src="imagen/tel2.png" width="100px" height="100px"></a>
-        <input
-          type="number"
-          placeholder=" tel destino"
-          id="destino"
-          class="input"
-        />
-      </div>
-
-      <div class="container">
-        <input
-          type="number"
-          placeholder=" ingresar clave"
-          id="offset"
-          class="input"
-        />
-      </div>
-
-      <div class="container">
-        <textarea
-          name="mensaje"
-          rows="10"
-          cols="40"
-          placeholder="Escribe  tu  mensaje"
-          id="mensaje"
-        ></textarea>
-      </div>
-
-      <div class="container">
-        <button id="button_encode">CIFRAR</button>
-        <button id="button_decode">DESCIFRAR</button>
-      </div>
-      <div id="container_historial">
-        <img
-          src="imagen/historial.png"
-          width="70px"
-          height="70px"
-          id="historial"
-        />
-        <button type="boton" onclick="location.reload()" id="inicio">
-          RESET
-        </button>
-        <!--reset de formulario -->
-      </div>
-    </section>
-    <section>
-      <!--esta  seccion lleva la interaccion que muestra el  mensaje cifrado  o  desfrado -->
-      <div id="modal_container" class="modal-container">
-        <div class="modal">
-          <p id="modal"></p>
-          <button id="cerrar">
-            <img src="imagen/cerrar.png" width="50px" height="50px" />
-          </button>
-          <button type="submit" id="enviar">
-            <img src="imagen/logog.png" width="50px" height="50px" />
-          </button>
+    <main>
+      <div id="conteinerWelcome">
+        <div class="welcome">
+          <h1 class="welcome">BIENVENID@S</h1>
+          <p id = "lema">
+            Con secretos de amig@s puedes enviarte mensajes encriptados con quien
+            desees, para que tus secretos viajen de forma segura.
+          </p>
         </div>
       </div>
-    </section>
 
-    <script src="index.js" type="module"></script>
-  </body>
+      <div class="container">
+        <div id="containerForm">
+          <form>
+            <input list="browsers" name="browser" id="browser" placeholder="Elige el pais destino" class="input">
+            <datalist id="browsers">
+              <option value="Edge">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+            </datalist>
+            <input type="number" placeholder="+57" id="PrefijoTelfono" class="input" />
+            <input type="number" placeholder="Teléfono de destino" id="destino" class="input" />
+            <input type="number" placeholder="Ingrese el código de encriptación" id="offset" class="input" />
+            <textarea name="mensaje" rows="5" clis="101" placeholder="Escriba su mensaje" id="mensaje"
+              class="input"></textarea>
+          </form>
+        </div>
+      </div>
+
+      <section>
+        <div class="container">
+          <button id="button_encode" class="button">CIFRAR</button>
+          <button id="button_decode" class="button">DESCIFRAR</button>
+          <button type="boton" onclick="location.reload()" id="inicio" class="button">RESET</button>
+          <!--reset de formulario -->
+        </div>
+      </section>
+
+      <div>
+        <p id="enlaceInfo">Para más información sobre esta aplicación, haga <a href="#" data-id="modal_container" id="informacion">Click aqui</a>
+        </p>
+        <!-- <a href="informacion.js" id="informacion">Click aqui</a> -->
+      </div>
+
+      <section>
+          <!-- esta  seccion lleva la interaccion que muestra el  mensaje cifrado  o  descifrado  -->
+          <div id="modal_container" class="modal-container">
+            <div class="modal">
+              <button id="cerrar"> X </button>
+              <div id="modal"></div>
+              <button type="submit" id="enviar">
+                <img src="imagen/logoWhatsApp.png" width="50px" height="50px" />
+              </button>
+            </div>
+          </div>
+        </section>
+    </main>
+
+ 
+  </div>
+
+  <script src="index.js" type="module"></script>
+</body>
+
 </html>
