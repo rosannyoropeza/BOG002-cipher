@@ -1,8 +1,7 @@
 import cipher from "./cipher.js";
-import {information} from "./Informacion.js";
+import { information } from "./Informacion.js";
 import prefijos_paises from "./prefijos_paises.js";
 
-const divLogo = document.getElementById("divLogo");
 let mensaje = document.getElementById("mensaje");
 let offset = document.getElementById("offset");
 let botonDecode = document.getElementById("button_decode");
@@ -15,39 +14,41 @@ let modal = document.getElementById("modal");
 let enviarBoton = document.getElementById("enviar");
 let destino = document.getElementById("destino");
 let prefijo = document.getElementById("prefijo");
-let historial = document.getElementById("historial");
-const informacion=document.getElementById("informacion");
-const listaPaises=document.getElementById("paises");
+// let historial = document.getElementById("historial");
+const informacion = document.getElementById("informacion");
+// const listaPaises=document.getElementById("paises");
+// const listaPais=document.getElementById("listaPais");
 const PrefijoTelfono = document.getElementById("PrefijoTelfono");
+const listaDePaises = document.getElementById("prefijo");
 
-  prefijos_paises.forEach((pais)=>{
-    const option = document.createElement("option");
-    option.setAttribute("value", `${pais.PAIS}`);
-    listaPaises.appendChild(option);
-  });
+// prefijos_paises.forEach((pais)=>{
+//     const option = document.createElement("option");
+//     option.setAttribute("value", `${pais.PAIS}`);
+//     listaPaises.appendChild(option);
+//     PrefijoTelfono.value = listaPaises[option];
+// });
 
-// prefijo.addEventListener("click", prefijos);
-// function prefijos(data) {
-//   console.log(data)
-// }
+prefijos_paises.forEach((pais) => {
+  const option = document.createElement("option");
+  option.setAttribute("value", `${pais.PREFIJO}`);
+  option.innerHTML = `${pais.PAIS}`;
+  listaDePaises.appendChild(option);
+});
 
-// function prefijosPaises(data){
-//   data.forEach((paises){
-//     if(paises===PAIS)
-//        paises.PAIS.PREFIJO
-//   });
-// return data
-// }
+prefijo.addEventListener("change", function () {
+  PrefijoTelfono.value = prefijo.value;
+  console.log(PrefijoTelfono.value);
+});
 
 cerrar.addEventListener("click", close);
 function close() {
   modal_container.classList.remove("show");
 }
 
-informacion.addEventListener("click", function(){
+informacion.addEventListener("click", function () {
   modal_container.classList.add("show");
   enviarBoton.style.display = "none";
-  modal.innerHTML="";
+  modal.innerHTML = "";
   modal.appendChild(information());
 })
 

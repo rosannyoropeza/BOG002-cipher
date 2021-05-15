@@ -36,10 +36,13 @@
       <div class="container">
         <form>
             <div id="containerForm">
-              <input list="paises" name="browser" id="prefijo" placeholder="Elige el pais destino" class="input">
+              <!-- <input list="paises" id="listaPais" placeholder="Elige el pais destino" class="input">
               <datalist id="paises">
-              </datalist>
-              <input type="number" placeholder="+57" id="PrefijoTelfono" class="input" />
+    
+              <select id="prefijo" class="input">
+                <option value="" id="paises"> Elige el pais destino</option>
+              </select>
+              <input type="text" placeholder="+00" id="PrefijoTelfono" class="input" readonly/>
               <input type="number" placeholder="Teléfono de destino" id="destino" class="input" />
               <input type="number" placeholder="Ingrese el código de encriptación" id="offset" class="input" />
               <textarea name="mensaje" rows="5" clis="101" placeholder="Escriba su mensaje" id="mensaje"
@@ -49,26 +52,13 @@
                 <button id="button_encode" class="button">CIFRAR</button>
                 <button id="button_decode" class="button">DESCIFRAR</button>
                 <button type="reset" class="button">RESET</button>
-                <!-- <button type="boton" onclick="location.reload()" id="inicio" class="button">RESET</button> -->
-                <!--reset de formulario -->
               </div>
           </form>
       </div>
 
-      <!-- <section>
-        <div class="container">
-          <button id="button_encode" class="button">CIFRAR</button>
-          <button id="button_decode" class="button">DESCIFRAR</button>
-          <button type="reset" class="button">RESET</button>
-          <!-- <button type="boton" onclick="location.reload()" id="inicio" class="button">RESET</button> -->
-          <!--reset de formulario -->
-        <!-- </div>
-      </section> --> 
-
       <div>
         <p id="enlaceInfo">Para más información sobre esta aplicación, haga <a href="#" data-id="modal_container" id="informacion">Click aqui</a>
         </p>
-        <!-- <a href="informacion.js" id="informacion">Click aqui</a> -->
       </div>
 
       <section>

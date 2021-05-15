@@ -68,8 +68,9 @@ body{
   margin: 10px;
   outline: none;
   border: 0;
-  font-size: 1rem;
-  color: black;
+  /* font-size: 1rem; */
+  /* color: black;
+  color: #0000008f; */
   font-family: 'Salsa', cursive;
   border: solid 2px  #FFffFF;
   box-sizing: border-box;
